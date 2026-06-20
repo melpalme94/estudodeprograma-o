@@ -16,3 +16,14 @@ Calcule o próximo número da sequência, somando os dois anteriores.
 "Avance" as variáveis: o que era atual passa a ser anterior, e o novo valor calculado passa a ser atual.
 
 */
+const n = 7;
+
+let anterior = 0;
+let atual = 1;
+
+for (let i = 0; i < n; i++){
+    console.log(anterior);
+    const proximo = anterior + atual;
+    anterior = atual;
+    atual = proximo;
+}
